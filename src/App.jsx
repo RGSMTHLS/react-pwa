@@ -3,7 +3,7 @@ import CameraComponent from "./components/CameraComponent";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-slate-400">
       <CameraComponent />
     </div>
   );
