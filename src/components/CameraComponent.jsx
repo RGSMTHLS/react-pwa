@@ -43,20 +43,20 @@ const CameraComponent = () => {
   };
 
   return (
-    <div>
+    <div className="fixed">
       <button
-        className="start-camera-button active:scale-95 hover:bg-gray-700"
+        className="start-camera-button active:scale-95 hover:bg-gray-700 fixed top-0"
         onClick={startCamera}
       >
         Starta kamera
       </button>
       <video
-        className="w-screen h-screen"
+        className="w-screen h-screen fixed top-0 left-0 object-cover"
         ref={videoRef}
         autoPlay
         playsInline
       />
-      <button className="take-photo-button" onClick={takePhoto}>
+      <button className="take-photo-button fixed bottom-0" onClick={takePhoto}>
         Ta bild
       </button>
     </div>
